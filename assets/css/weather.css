@@ -1,0 +1,83 @@
+#container {
+	min-width: 350px;
+	max-width:600px;
+	margin: 0 auto;
+	margin-top: 10%;
+	text-align: center;
+	letter-spacing: 0.2em;
+	line-height: 2em;
+	font-family: 'Ubuntu Mono', monospace;	
+}
+
+body {
+	background-color: rgb(22,22,22);
+	color: rgb(234,234,234);
+}
+
+#temprature h2, #description h3{
+	display: inline;
+}
+
+#heading {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 2.2em;
+	font-family: 'Joti One', cursive;
+}
+
+#location {
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#temprature {
+	font-weight: normal;
+	font-size: 27px;
+	margin-bottom: 10px;
+	margin-top: 5px; 
+	padding: 0px;
+}
+
+#unit {
+	font-weight: bold;
+	font-size: 35px;
+}
+
+sup {
+	font-size: 27px;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	color: #12569b;
+	cursor: pointer;
+
+}
+
+#unit {
+	color: #12569b;
+	cursor: pointer;
+
+}
+
+img{
+	vertical-align: middle;
+	height:22px;
+	width: 38px;
+	background-color: rgb(234,234,234);
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	margin-left: 4px; 
+}
+
+#description {
+	text-transform: uppercase;
+}
+
+
+#icon {
+	font-size: 40px;
+	margin-top: 10px; 
+}
