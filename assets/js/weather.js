@@ -10,7 +10,10 @@ var longitude;	//location longitude.
 var imgSrc;		//var to store img url.
 
 //Get latitude and longitude.
-navigator.geolocation.getCurrentPosition(function(position){
+navigator.geolocation.getCurrentPosition(getLocation, error);
+
+//get location
+function getLocation(position) {
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude;
 	urlFcc = "https://fcc-weather-api.glitch.me/api/current?lat=" + latitude + "&lon=" + longitude;
@@ -18,7 +21,11 @@ navigator.geolocation.getCurrentPosition(function(position){
 	console.log(latitude,longitude,"geo");
 
 	contain();
-});
+}
+
+function error() {
+	alert("Please enable location and reload");
+}
 
 //To Get the themprature in fahrenheit
 function convertToF()
